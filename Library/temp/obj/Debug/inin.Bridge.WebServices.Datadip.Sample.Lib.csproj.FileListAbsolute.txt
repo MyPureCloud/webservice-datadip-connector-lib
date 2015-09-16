@@ -4,3 +4,8 @@ C:\Users\Ian.Mathew\Desktop\github_repos\Library\dist\debug\any\inin.Bridge.WebS
 C:\Users\Ian.Mathew\Desktop\github_repos\Library\temp\obj\Debug\inin.Bridge.WebServices.Datadip.Sample.Lib.csprojResolveAssemblyReference.cache
 C:\Users\Ian.Mathew\Desktop\github_repos\Library\temp\obj\Debug\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.dll
 C:\Users\Ian.Mathew\Desktop\github_repos\Library\temp\obj\Debug\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.pdb
+C:\Users\Ian.Mathew\Documents\GitHub\webservice-datadip-connector-lib\Library\dist\debug\any\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.dll.config
+C:\Users\Ian.Mathew\Documents\GitHub\webservice-datadip-connector-lib\Library\dist\debug\any\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.dll
+C:\Users\Ian.Mathew\Documents\GitHub\webservice-datadip-connector-lib\Library\dist\debug\any\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.pdb
+C:\Users\Ian.Mathew\Documents\GitHub\webservice-datadip-connector-lib\Library\temp\obj\Debug\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.dll
+C:\Users\Ian.Mathew\Documents\GitHub\webservice-datadip-connector-lib\Library\temp\obj\Debug\inin.Bridge.WebServices.Datadip.Sample.Lib-wd-15-2.pdb

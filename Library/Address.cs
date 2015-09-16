@@ -10,34 +10,38 @@ namespace inin.Bridge.WebServices.Datadip.Lib
     [DataContract]
     public class Address
     {
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string City { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Country { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Line1 { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Line2 { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Line3 { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string PostalCode { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string State { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Type { get; set; }
 
         public Address() { }
 
         public Address(Address address)
         {
+            if (address == null)
+            {
+                return;
+            }
             City = address.City;
             Country = address.Country;
             Line1 = address.Line1;

@@ -10,22 +10,22 @@ namespace inin.Bridge.WebServices.Datadip.Lib
     [DataContract]
     public class Case
     {
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string AssigneeId { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Subject { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Status { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string ContactId { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string ContactName { get; set; }
 
         [DataMember(EmitDefaultValue = false)]

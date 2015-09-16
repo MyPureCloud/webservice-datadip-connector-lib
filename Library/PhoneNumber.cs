@@ -20,6 +20,10 @@ namespace inin.Bridge.WebServices.Datadip.Lib
 
         public PhoneNumber(PhoneNumber clonedNumber)
         {
+            if (clonedNumber == null)
+            {
+                return;
+            }
             Number = clonedNumber.Number;
             PhoneType = clonedNumber.PhoneType;
         }

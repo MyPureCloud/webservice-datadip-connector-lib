@@ -10,25 +10,25 @@ namespace inin.Bridge.WebServices.Datadip.Lib
     [DataContract]
     public class Account
     {
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string CustomAttribute { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Name { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public string Number { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue=false)]
         public Addresses Addresses { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public PhoneNumbers PhoneNumbers { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public EmailAddresses EmailAddresses { get; set; }
 
         public Account() { }
@@ -43,10 +43,17 @@ namespace inin.Bridge.WebServices.Datadip.Lib
             Id = clonedAccount.Id;
             Name = clonedAccount.Name;
             Number = clonedAccount.Number;
-            Addresses = new Addresses(clonedAccount.Addresses);
-            PhoneNumbers = new PhoneNumbers(clonedAccount.PhoneNumbers);
-            EmailAddresses = new EmailAddresses(clonedAccount.EmailAddresses);
-
+            if (clonedAccount.Addresses != null) {
+                Addresses = new Addresses(clonedAccount.Addresses);
+            }
+            if (clonedAccount.PhoneNumbers != null)
+            {
+                PhoneNumbers = new PhoneNumbers(clonedAccount.PhoneNumbers);
+            }
+            if (clonedAccount.EmailAddresses != null)
+            {
+                EmailAddresses = new EmailAddresses(clonedAccount.EmailAddresses);
+            }
         }
     }
 }
