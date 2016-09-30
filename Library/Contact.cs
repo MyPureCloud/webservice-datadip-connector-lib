@@ -17,6 +17,9 @@ namespace inin.Bridge.WebServices.Datadip.Lib
         public string LastName { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
+        public string FullName { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
         public string Id { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
@@ -37,6 +40,8 @@ namespace inin.Bridge.WebServices.Datadip.Lib
         {
             FirstName = clonedContact.FirstName;
             LastName = clonedContact.LastName;
+            FullName = clonedContact.FullName;
+
             Id = clonedContact.Id;
             CustomAttribute = clonedContact.CustomAttribute;
             if (clonedContact.Address != null)
